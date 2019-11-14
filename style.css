@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+html,
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+}
+
+    hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        border: #e9e9e9 solid 1px;
+    }
+
+    .wrap {
+        margin: 50px auto;
+        width: 90%;
+        padding: 60px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, .2) 1px 1px 7px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        form > textarea {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border: #e9e9e9 solid 1px;
+            width: 100%;
+        }
+
+        form > button[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            background-color: limegreen;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+    /* Results */
+    .results-item {
+        width: 100%;
+    }
+
+        header > img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 90px;
+        }
+
+        header > h3 {
+            display: inline-block;
+            vertical-align: middle;
+            width: 680px;
+            margin-left: 20px;
+        }
+
+        h4 {
+            margin-top: 25px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: crimson;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            th,
+            td {
+                border: #e9e9e9 solid 1px;
+                padding: 7px 10px;
+            }

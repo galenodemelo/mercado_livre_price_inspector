@@ -1,0 +1,40 @@
+<div class="wrap">
+    <div class="result-item">
+        <header>
+            <img src="{thumb}" />
+            <h3>{title}</h3>
+        </header>
+        
+        <h4 align="center">Resumo</h4>
+        <table align="center">
+            <tr>
+                <th align="right">Menor preço</th>
+                <td>{lowestPrice}</td>
+                <th align="right">Preço médio</th>
+                <td>{meanPrice}</td>
+                <th align="right">Concorrentes</th>
+                <td>{numberSellers}</td>
+                <th align="right">Qtde. vendida</th>
+                <td>{totalSold}</td>
+            </tr>
+        </table>
+        
+        <h4 align="center">Anúncios (do menor ao maior preço)</h4>
+        <table align="center">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Preço</th>
+                    <th>Parcelas</th>
+                    <th>Qtde. vendida</th>
+                    <th>Frete grátis</th>
+                    <th>Localização</th>
+                    <th>Selo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {adList}
+            </tbody>
+        </table>
+    </div>
+</div>
