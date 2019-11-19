@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Mercado Livre - Comparador de preços</title>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css?<?= time() ?>">
     </head>
     <body>
         <div class="wrap">
@@ -14,16 +14,19 @@
             </p>
 
             <form id="ean-list-form" action="" method="POST">
-                <textarea rows="15" id="ean-list" placeholder="Cole aqui a lista de EANs"></textarea>
+                <textarea rows="5" id="ean-list" placeholder="Cole aqui a lista de EANs">7896525098935
+7896525085553
+7896525098911
+7896525098898</textarea>
                 <button type="submit">Buscar informações</button>
             </form>
         </div>
 
-        <h1 align="center">Resultados</h1>
+        <h1 align="center" id="results-list">Resultados</h1>
         <div id="results"></div>
         
-        <script src="fetchResults.js"></script>
-        <script src="displayResults.js"></script>
-        <script src="orchestrator.js"></script>
+        <script src="fetchResults.js?<?= time() ?>"></script>
+        <script src="displayResults.js?<?= time() ?>"></script>
+        <script src="orchestrator.js?<?= time() ?>"></script>
     </body>
 </html>
